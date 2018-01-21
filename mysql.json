@@ -1,0 +1,6 @@
+{
+    "host": "localhost",
+    "database": "cars24",
+    "user": "newuser",
+    "password": "newpass"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "handlebars-static": "^2.0.2",
+    "handlebars-template-loader": "^0.8.0",
+    "hbs": "^4.0.1",
+    "mysql2": "^1.5.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.31.2",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}

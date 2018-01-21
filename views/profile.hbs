@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container-fluid" style="background-color:darkslategray">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#" style="font-size:22px">CARS 24-7</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    See it all
+                                  </a> -->
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"></a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#"></a>
+                                </li>
+                              </ul>
+                                <h4 style="color:white">Profile</h4>
+                                
+                              
+                            </div>
+
+                    </nav>
+            </div><br/><br/><br/>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                                                <div class="col"></div>
+
+                        <div class="col-xs-10 col-sm-10 col-md-6 col-lg-4 col-xl-4">
+                            <div class="card" style="width: 22rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">User profile</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Details</h6>
+                                    <p class="card-text">
+                                        <ul class="list-group">
+                                    
+                                                <li class="list-group-item list-group-item-primary">Username: {{user.username}}</li>
+                                                <li class="list-group-item list-group-item-primary" id="pass">{{user.password}}</li>
+                                                <li class="list-group-item list-group-item-warning">First name: {{user.fname}}</li>
+                                                <li class="list-group-item list-group-item-warning">Last name: {{user.lname}}</li>
+                                                <li class="list-group-item list-group-item-warning">DOB: {{user.dob}}</li>
+                                                <li class="list-group-item list-group-item-warning">Country: {{user.country}}</li>
+                                                <li class="list-group-item list-group-item-dark">Address: {{user.address}}</li>
+                                                <li class="list-group-item list-group-item-dark">Mobile no.: {{user.mobno}}</li>
+                                                <li class="list-group-item list-group-item-dark">E-mail: {{user.email}}</li>
+                                                </ul>
+                                    </p>
+                                    <h5 class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                      Set new password
+                                    </h5>
+                                    <div class="collapse" id="collapseExample">
+                                      <div class="card card-body">
+                                        
+                                        <form action="/user/updatepass" method="post" id="formid">
+                                        Your id: <select name="uid"><option>{{user.id}}</option></select>
+                                          <div class="form-group">
+                                            <label for="oldpass">Old Password</label>
+                                            <input type="password" class="form-control" id="oldpass" placeholder="Old Password">
+                                          </div>
+                                          <h3 class="btn btn-primary" id="enable">Check</h3>
+                                          <div class="form-group">
+                                            <label for="newpass">New Password</label>
+                                            <input type="password" name="newpass" class="form-control" id="newpass" placeholder="New Password">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="cnewpass">Confirm new password</label>
+                                            <input type="password" class="form-control" id="cnewpass" placeholder="Confirm new Password">
+                                          </div>
+                                          <h3 class="btn btn-success" id="cbtn">Continue</h3>
+                                          <div id="sub"></div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                      
+                                    <br/>
+                                    <a class="btn btn-danger" href="/pages/premium/main">See the main page!</a>
+                                    
+                                </div>
+                                </div>
+                        </div>
+                        
+                        <div class="col"></div>
+
+                    </div>
+                </div>
+            </section>
+            <br/><br/>
+
+{{!-- <b>Username :</b> {{user.username}} --}}
+
+<script>
+  let sub=document.getElementById('sub')
+  let p
+  (function(){
+    p=$('#pass').text()
+    $('#newpass').attr("disabled","disabled")
+    $('#cnewpass').attr("disabled","disabled")
+    let str=$('#pass').text().split('')
+    let k=''
+    for(let i=0;i<str.length;i++){
+      k+='*'
+      
+    }
+    $('#pass').text(k)
+  })()
+  $('#newpass').attr("disabled","disabled")
+    $('#cnewpass').attr("disabled","disabled")
+  //console.log(p)
+  $('#enable').click(()=>{
+    if($('#oldpass').val()==p){
+      $('#newpass').removeAttr("disabled")
+      $('#cnewpass').removeAttr("disabled")
+    }
+  })
+  $('#cbtn').click(()=>{
+    if($('#newpass').val()!=$('#cnewpass').val()){
+      window.alert("Passwords don't match")
+    }
+    else if($('#newpass').val().length<6){
+      window.alert("Password must include minimum 6 characters")
+    }
+    else{
+      $('#cnewpass').attr("disabled","disabled")
+      sub.innerHTML='<input id="final" class="btn btn-warning" type="submit" value="Submit">'
+    }
+    
+      
+        $("#formid").submit(function(e){
+          if($('#newpass').val()!=$('#cnewpass').val()){
+            window.alert('Password not updated')
+            e.preventDefault();}
+            else{
+        window.alert('Password successfully updated')
+      }
+        });
+      
+      
+    
+  })
+</script>
+</body>
+</html>

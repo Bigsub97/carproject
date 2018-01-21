@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+</head>
+<body>
+    <div class="container-fluid" style="background-color:darkslategray">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+                            <a class="navbar-brand" href="#" style="font-size:22px">CARS 24-7</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  {{!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> --}}
+                                    
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/pages/guest/allcars"></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/pages/guest/upcomingcars"></a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#"></a>
+                                </li>
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                <a href="/user/signin" class="btn btn-outline-success my-2 my-sm-0">Login</a>&nbsp;
+                                <a href="/user/signup" class="btn btn-outline-success my-2 my-sm-0">Sign up</a>
+                                
+                              </form>
+                            </div>
+                    </nav>
+            </div>
+            <section>
+                <div class="alert alert-warning" role="alert">
+                    Currently, we are collaborated with four manufacturers.
+                </div><br/>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-4">
+                            <p>
+                                <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#c1" aria-expanded="false" aria-controls="collapseExample">
+                                    <img src="/images/ferrari-logo.jpg" style="width:100%">
+                                </button>
+                            </p>
+                                <div class="collapse" id="c1">
+                                
+                                    <div class="list-group">
+                                        <a href="/pages/guest/californiat" class="list-group-item list-group-item-action">California T</a>
+                                    </div>
+                                
+                                </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col-4">
+                             <p>
+                                <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#c2" aria-expanded="false" aria-controls="collapseExample">
+                                    <img src="/images/mclarenlogo.png" style="width:100%">
+                                </button>
+                            </p>
+                                <div class="collapse" id="c2">
+                                <div class="list-group">
+                                        <a href="/pages/guest/mclaren570s" class="list-group-item list-group-item-action">570 S</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col"></div>
+                    </div><br/><br/><br/>
+                    <div class="row">
+                        <div class="col"></div>
+                        <div class="col-4">
+                            <p>
+                                <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#c3" aria-expanded="false" aria-controls="collapseExample">
+                                    <img src="/images/fordlogo.jpg" style="width:100%">
+                                </button>
+                            </p>
+                                <div class="collapse" id="c3">
+                                <div class="list-group">
+                                        <a href="/pages/guest/mustang" class="list-group-item list-group-item-action">Mustang 2017</a>
+                                        <a href="/pages/guest/shelby" class="list-group-item list-group-item-action">Shelby gt500</a>
+                                        <a href="/pages/guest/endeavour" class="list-group-item list-group-item-action">Endeavour</a>
+                                        <a href="/pages/guest/focus" class="list-group-item list-group-item-action">Focus RS</a>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col"></div>
+                        <div class="col-4">
+                             <p>
+                                <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#c4" aria-expanded="false" aria-controls="collapseExample">
+                                    <img src="/images/mitsubishilogo.png" style="width:100%">
+                                </button>
+                            </p>
+                                <div class="collapse" id="c4">
+                                <div class="list-group">
+                                        <a href="/pages/guest/montero" class="list-group-item list-group-item-action">2012 Montero</a>
+                                        <a href="/pages/guest/lancer" class="list-group-item list-group-item-action">Lancer Evolution X FQ-400</a>
+                                        
+                                </div>
+                                </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                </div>
+                
+            </section><br/><br/>
+</body>
+</html>
