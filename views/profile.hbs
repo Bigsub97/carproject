@@ -36,10 +36,39 @@
                                     <a class="dropdown-item" href="#"></a>
                                   </div>
                                 </li>
-                                <li class="nav-item">
-                                  <a class="nav-link disabled" href="#"></a>
-                                </li>
+                                
                               </ul>
+                              
+                                                                  <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#mod">
+                                  Delete my account
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="mod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">DELETE ACCOUNT</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        Are you sure?<br/><br/>
+                                        <form action="/user/deleteacc" method="post">
+                                        <div style="visibility:hidden;height:0px"><select name="uid1"><option>{{user.id}}</option></select></div>
+                                          <input type="submit" class="btn btn-primary" value="YES">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">NO</button>
+                                        </form>
+                                        
+                                        
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>&nbsp;&nbsp;&nbsp;
+                                
                                 <h4 style="color:white">Profile</h4>
                                 
                               
@@ -79,7 +108,7 @@
                                       <div class="card card-body">
                                         
                                         <form action="/user/updatepass" method="post" id="formid">
-                                        Your id: <select name="uid"><option>{{user.id}}</option></select>
+                                        <div style="visibility:hidden;height:0px">Your id: <select name="uid"><option>{{user.id}}</option></select></div>
                                           <div class="form-group">
                                             <label for="oldpass">Old Password</label>
                                             <input type="password" class="form-control" id="oldpass" placeholder="Old Password">

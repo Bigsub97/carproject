@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Title</title>
+        <script src="/socket.io/socket.io.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="script2.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:darkslategray">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#" style="font-size:22px">CARS 24-7</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    See it all
+                                  </a> -->
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"></a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active">Sell your car</a>
+                                </li>
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                <h4 style="color:white">Hello <span id="u">{{user.username}}</span></h4>
+                                
+                              </form>
+                            </div>
+
+                    </nav>
+            </div><br/>
+           
+
+
+
+<section>
+
+                <div class="container">
+                    
+                    <div class="row">
+                            <div class="col-xs-1 col-sm-1 col-md-3 col-lg-4 col-xl-4"></div>
+                            <div class="col-xs-10 col-sm-10 col-md-6 col-lg-4 col-xl-4">
+                                    <div class="card border-dark mb-3" style="max-width: 60rem;">
+                                            <div class="card-header">Enter your car details here</div>
+                                            <div class="card-body text-success">
+                                               
+                                                    <div class="form-group">
+                                                      <label for="no">Personal contact number</label>
+                                                      <input required name="no" type="number" class="form-control" id="no" placeholder="Enter contact number">
+                                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="cname">Car name</label>
+                                                      <input required name="cname" type="text" class="form-control" id="cname" placeholder="Enter car name">
+                                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="cmod">Car model</label>
+                                                      <input required name="cmod" type="text" class="form-control" id="cmod" placeholder="Enter car model">
+                                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="cnum">Car number</label>
+                                                      <input required name="cnum" type="text" class="form-control" id="cnum" placeholder="Enter car number">
+                                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="km">No. of kms. run</label>
+                                                      <input required name="km" type="number" class="form-control" id="km" placeholder="Enter kms">
+                                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="cost">Expected amount (in rupees)</label>
+                                                      <input required name="cost" type="number" class="form-control" id="cost" placeholder="Enter expected amount">
+                                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                                                    </div>
+                                                    
+                                                    <button class="btn btn-info" id="sell">Sell</button>
+                                                    
+                                                    
+                                                    
+                                                              
+                                                            </div>
+                                                          </div>
+                                                          
+                                                    
+                                                  
+                                            </div>
+                                          </div>
+                            </div>
+        
+                            <div class="col-xs-1 col-sm-1 col-md-3 col-lg-4 col-xl-4"></div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+ 
+                
+            </section>
+
+
+
+
+
+</body>
+</html>

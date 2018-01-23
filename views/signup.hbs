@@ -150,20 +150,39 @@
         
         <script>
           
+          
           $("#formid").submit(function(e){
             
               if($('#pass').val()!=$('#cpass').val()){
             window.alert("Passwords don't match")
             e.preventDefault();}
             else{
-              setTimeout(()=>{
-                window.alert('Sorry,this username exists')
-              },1000)
+              
       }
             
           
         });
+        $('#btn').click(function(){
+        
           
+                if($('#pass').val()!=$('#cpass').val())
+                {
+                    window.alert("Passwords don't match")
+                }
+                else if($('#pass').val()==''){
+                    window.alert("Enter a password")
+                }
+                else if($('#pass').val().length<6){
+                    window.alert("Password must include at least 6 characters")
+                }
+                else{
+                    p.innerHTML='<input type="submit" id="final" class="btn btn-warning" value="Submit">'
+                    p2.disabled=true;
+                    pr.innerHTML='<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>'
+
+                }
+        })
+           
             
             let p1=document.getElementById('pass')
             let p2=document.getElementById('cpass')
@@ -175,24 +194,7 @@
               pr.innerHTML='<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>'
               setTimeout(()=>c.disabled=true,1)
             }
-            btn.onclick=function(){
-                if(p1.value!=p2.value)
-                {
-                    window.alert("Passwords don't match")
-                }
-                else if(p1.value==''){
-                    window.alert("Enter a password")
-                }
-                else if(p1.value.length<6){
-                    window.alert("Password must include at least 6 characters")
-                }
-                else{
-                    p.innerHTML='<input type="submit" id="final" class="btn btn-warning" value="Submit">'
-                    p2.disabled=true;
-                    pr.innerHTML='<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>'
-
-                }
-            }
+           
             
         </script>
 

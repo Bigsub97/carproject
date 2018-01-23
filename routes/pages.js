@@ -101,6 +101,18 @@ route.get('/premium/main', (req, res) => {
         }
         res.redirect('/user/signin')
     })
+    route.get('/premium/buy', (req, res) => {
+        if (req.user) {
+            return res.render('buy',{user:req.user})
+        }
+        res.redirect('/user/signin')
+    })
+    route.get('/premium/sell', (req, res) => {
+        if (req.user) {
+            return res.render('sell',{user:req.user})
+        }
+        res.redirect('/user/signin')
+    })
 
 
 exports = module.exports = route
