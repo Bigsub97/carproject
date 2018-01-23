@@ -21,7 +21,7 @@ $(function(){
                 
                 
                 <div class="card-body text-info">
-                
+                <img src="${c[i].im}" width="100%" alt="car_image"><br/><br/>
                     <h5 class="card-title">${c[i].cname}</h5>
                     <h6 class="text-warning">Personal contact- ${c[i].no}</h6>
                     <p>
@@ -51,6 +51,7 @@ $(function(){
                 <div class="card border-info mb-3" style="max-width: 30rem;">
                 <div class="card-header">${c[i].username}</div>
                 <div class="card-body text-info">
+                <img src="${c[i].im}" width="100%" alt="car_image"><br/><br/>
                     <h5 class="card-title">${c[i].cname}</h5>
                     <h6 class="text-warning">Personal contact- ${c[i].no}</h6>
                     <p>
@@ -101,7 +102,7 @@ $(function(){
         
         
         <div class="card-body text-info">
-        
+        <img src="${obj.im}" width="100%" alt="car_image"><br/><br/>
             <h5 class="card-title">${obj.cname}</h5>
             <h6 class="text-warning">Personal contact- ${obj.no}</h6>
             <p>
@@ -128,6 +129,7 @@ $(function(){
         <div class="card border-info mb-3" style="max-width: 30rem;">
         <div class="card-header">${obj.username}</div>
         <div class="card-body text-info">
+        <img src="${obj.im}" width="100%" alt="car_image"><br/><br/>
             <h5 class="card-title">${obj.cname}</h5>
             <h6 class="text-warning">Personal contact- ${obj.no}</h6>
             <p>
@@ -164,7 +166,8 @@ $(function(){
             cnum:$('#cnum').val(),
             km:$('#km').val(),
             cost:$('#cost').val(),
-            timestamp:new Date()
+            timestamp:new Date(),
+            im:$('#im').val()
         })
     })
 })

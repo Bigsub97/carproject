@@ -80,7 +80,8 @@ io.on('connection', function (socket) {
             km:obj.km,
             cost:obj.cost,
             timestamp:obj.timestamp,
-            id:c.length-1
+            id:c.length-1,
+            im:obj.im
         })
     })
 })
