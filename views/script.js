@@ -120,13 +120,10 @@ $(function(){
         })
     })
     $('#picsend').click(()=>{
-        let abc=$('#pic').val().split('')
-        let temp=$('#pic').val().split('').splice(12,abc.length-1,'/images/').join('')
-        let image='/images/'+temp
         
         socket.emit('pics',{
             name:$('#uname').text(),
-            img:image,
+            img:$('#pic').val(),
             timestamp:new Date()
         })
     })

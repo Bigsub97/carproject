@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ADMIN</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container-fluid" style="background-color:darkslategray">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                            <a class="navbar-brand" href="#" style="font-size:22px">CARZONE</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    See it all
+                                  </a> -->
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#"></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#"></a>
+                                  </div>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#"></a>
+                                </li>
+                              </ul>
+                              <form class="form-inline my-2 my-lg-0">
+                                 
+                                <h4 style="color:white">ADMIN</h4>
+                                
+                              </form>
+                            </div>
+
+                    </nav>
+            </div><br/>
+            <div class="container">
+                <form action="/pages/addcar" method="post">
+                <div class="form-group">
+                    <label>manufacturer</label>
+                    <input class="form-control" name="manufacturer" type="text">
+                </div>
+                <div class="form-group">
+                    <label>name</label>
+                    <input class="form-control" name="name" type="text">
+                </div>
+                <div class="form-group">
+                    <label>mainimg</label>
+                    <input class="form-control" name="mainimg" type="text">
+                </div>
+                <div class="form-group">
+                    <label>ldate</label>
+                    <input class="form-control" name="ldate" type="text">
+                </div>
+                <div class="form-group">
+                    <label>e1</label>
+                    <input class="form-control" name="e1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>e2</label>
+                    <input class="form-control" name="e2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>description1</label>
+                    <input class="form-control" name="description1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>description2</label>
+                    <input class="form-control" name="description2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>description3</label>
+                    <input class="form-control" name="description3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>description4</label>
+                    <input class="form-control" name="description4" type="text">
+                </div>
+                <div class="form-group">
+                    <label>manimg</label>
+                    <input class="form-control" name="manimg" type="text">
+                </div>
+                <div class="form-group">
+                    <label>topspeed</label>
+                    <input class="form-control" name="topspeed" type="text">
+                </div>
+                <div class="form-group">
+                    <label>zerotohund</label>
+                    <input class="form-control" name="zerotohund" type="text">
+                </div>
+                <div class="form-group">
+                    <label>power</label>
+                    <input class="form-control" name="power" type="text">
+                </div>
+                <div class="form-group">
+                    <label>powtowt</label>
+                    <input class="form-control" name="powtowt" type="text">
+                </div>
+                <div class="form-group">
+                    <label>displacement</label>
+                    <input class="form-control" name="displacement" type="text">
+                </div>
+                <div class="form-group">
+                    <label>weight</label>
+                    <input class="form-control" name="weight" type="text">
+                </div>
+                <div class="form-group">
+                    <label>price</label>
+                    <input class="form-control" name="price" type="text">
+                </div>
+                <div class="form-group">
+                    <label>scapacity</label>
+                    <input class="form-control" name="scapacity" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorname1</label>
+                    <input class="form-control" name="colorname1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorname2</label>
+                    <input class="form-control" name="colorname2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorname3</label>
+                    <input class="form-control" name="colorname3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorname4</label>
+                    <input class="form-control" name="colorname4" type="text">
+                </div>
+                <div class="form-group">
+                    <label>color1</label>
+                    <input class="form-control" name="color1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>color2</label>
+                    <input class="form-control" name="color2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>color3</label>
+                    <input class="form-control" name="color3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>color4</label>
+                    <input class="form-control" name="color4" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorimg1</label>
+                    <input class="form-control" name="colorimg1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorimg2</label>
+                    <input class="form-control" name="colorimg2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorimg3</label>
+                    <input class="form-control" name="colorimg3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>colorimg4</label>
+                    <input class="form-control" name="colorimg4" type="text">
+                </div>
+                <div class="form-group">
+                    <label>interior1</label>
+                    <input class="form-control" name="interior1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>interior2</label>
+                    <input class="form-control" name="interior2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>interior3</label>
+                    <input class="form-control" name="interior3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>interior4</label>
+                    <input class="form-control" name="interior4" type="text">
+                </div>
+                <div class="form-group">
+                    <label>interior5</label>
+                    <input class="form-control" name="interior5" type="text">
+                </div>
+                <div class="form-group">
+                    <label>interior6</label>
+                    <input class="form-control" name="interior6" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriors1</label>
+                    <input class="form-control" name="exteriors1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriors2</label>
+                    <input class="form-control" name="exteriors2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriors3</label>
+                    <input class="form-control" name="exteriors3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriorb1</label>
+                    <input class="form-control" name="exteriorb1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriorb2</label>
+                    <input class="form-control" name="exteriorb2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriorb3</label>
+                    <input class="form-control" name="exteriorb3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriorf1</label>
+                    <input class="form-control" name="exteriorf1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriorf2</label>
+                    <input class="form-control" name="exteriorf2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>exteriorf3</label>
+                    <input class="form-control" name="exteriorf3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odh1</label>
+                    <input class="form-control" name="odh1" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd11</label>
+                    <input class="form-control" name="odd11" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd12</label>
+                    <input class="form-control" name="odd12" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd13</label>
+                    <input class="form-control" name="odd13" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd14</label>
+                    <input class="form-control" name="odd14" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odh2</label>
+                    <input class="form-control" name="odh2" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd21</label>
+                    <input class="form-control" name="odd21" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd22</label>
+                    <input class="form-control" name="odd22" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd23</label>
+                    <input class="form-control" name="odd23" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd24</label>
+                    <input class="form-control" name="odd24" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odh3</label>
+                    <input class="form-control" name="odh3" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd31</label>
+                    <input class="form-control" name="odd31" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd32</label>
+                    <input class="form-control" name="odd32" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd33</label>
+                    <input class="form-control" name="odd33" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd34</label>
+                    <input class="form-control" name="odd34" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odh4</label>
+                    <input class="form-control" name="odh4" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd41</label>
+                    <input class="form-control" name="odd41" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd42</label>
+                    <input class="form-control" name="odd42" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd43</label>
+                    <input class="form-control" name="odd43" type="text">
+                </div>
+                <div class="form-group">
+                    <label>odd44</label>
+                    <input class="form-control" name="odd44" type="text">
+                </div>
+                <input type="submit" class="btn btn-warning">
+              </form>
+            </div>
+              <br/><br/><br/>
+
+
+
+              
+
+</body>
+</html>

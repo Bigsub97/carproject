@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Title</title>
+    <title>Meet the other users</title>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
@@ -15,7 +15,7 @@
 <body>
     <div class="container-fluid" style="background-color:darkslategray">
                     <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-                            <a class="navbar-brand" href="#" style="font-size:22px">CARS 24-7</a>
+                            <a class="navbar-brand" href="#" style="font-size:22px">CARZONE</a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>
@@ -66,28 +66,17 @@
         <div class="col"></div>
         </div><br/>
         <div class="row">
-            <div class="col-2"></div>
-        <div class="col-lg-8 col-xs-10">
+            <div class="col"></div>
+        <div class="col-lg-6 col-xs-10">
             <div class="input-group input-group-sm mb-3">
-                <div class="row">
-                    <div class="col-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">Send images! &nbsp;</span>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="form-group">
-                            <input type="file" class="form-control-file" id="pic">
-                        </div>
-                    </div>
-                    <div class="col">            <button class="btn btn-primary" id="picsend">SEND</button></div>
-
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Send images! &nbsp;</span>
                 </div>
-                
-                
-        
-        
-        </div></div>
+<input type="text" class="form-control" id="pic" aria-describedby="emailHelp" placeholder="Enter image url">                </div>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-primary" id="picsend">SEND</button>
+        </div>
         <div class="col"></div>
         </div><br/>
         {{!-- <div class="row">

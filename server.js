@@ -5,6 +5,7 @@ const session = require('express-session')
 const app = express()
 const passport = require('./passport')
 const User = require('./db/models').User
+const Car = require('./db/models').Car
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
@@ -72,6 +73,7 @@ io.on('connection', function (socket) {
     socket.on('sell',(obj)=>{
         c.push(obj)
         io.emit('sell',{
+            name:obj.name,
             username:obj.username,
             no:obj.no,
             cname:obj.cname,
